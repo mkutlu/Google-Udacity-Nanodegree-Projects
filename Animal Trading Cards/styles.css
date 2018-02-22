@@ -1,0 +1,30 @@
+#first-div{
+    background: #28bab2;
+    background: -webkit-linear-gradient(left top, #C9DB78, #F7F85C, #B7DC7C, #72E041,#5CC72B);
+    background: -o-linear-gradient(bottom right, #C9DB78, #F7F85C, #B7DC7C, #72E041,#5CC72B);
+    background: -moz-linear-gradient(bottom right, #C9DB78, #F7F85C, #B7DC7C, #72E041,#5CC72B);
+    background: linear-gradient( to bottom right, #C9DB78, #F7F85C, #B7DC7C, #72E041,#5CC72B);
+
+    color: #36006f;
+    box-shadow: 10px 10px grey;
+    border-style: solid;
+    width: 350px;
+    text-align: center;
+}
+#second-div{
+    margin: 10px;
+    border-style: solid;
+    width: 320px;
+    text-align: left;
+    padding: 2px;
+}
+#fact{
+    font-style: italic;
+}
+span{
+   font-weight: bold;
+}
+img{
+    border-style: dotted;
+    border-color: white;
+}
