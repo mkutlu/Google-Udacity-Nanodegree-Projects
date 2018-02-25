@@ -1,30 +1,36 @@
-#first-div{
+.first-div{
     background: #28bab2;
-    background: -webkit-linear-gradient(left top, #C9DB78, #F7F85C, #B7DC7C, #72E041,#5CC72B);
-    background: -o-linear-gradient(bottom right, #C9DB78, #F7F85C, #B7DC7C, #72E041,#5CC72B);
-    background: -moz-linear-gradient(bottom right, #C9DB78, #F7F85C, #B7DC7C, #72E041,#5CC72B);
-    background: linear-gradient( to bottom right, #C9DB78, #F7F85C, #B7DC7C, #72E041,#5CC72B);
-
+    background: -webkit-linear-gradient(left top, #c9db78, #f7f85c, #b7dc7c, #72e041,#5cc72b);
+    background: -o-linear-gradient(bottom right, #c9db78, #f7f85c, #b7dc7c, #72e041,#5cc72b);
+    background: -moz-linear-gradient(bottom right, #c9db78, #f7f85c, #b7dc7c, #72e041,#5cc72b);
+    background: linear-gradient( to bottom right, #c9db78, #f7f85c, #b7dc7c, #72e041,#5cc72b);
     color: #36006f;
     box-shadow: 10px 10px grey;
     border-style: solid;
-    width: 350px;
+    width: 300px;
+    padding: 10px;
     text-align: center;
 }
-#second-div{
-    margin: 10px;
+
+.second-div{
+    padding: 10px;
     border-style: solid;
-    width: 320px;
     text-align: left;
-    padding: 2px;
 }
-#fact{
+
+.fact{
     font-style: italic;
 }
-span{
+
+.bolded-span{
    font-weight: bold;
 }
-img{
+
+.photo{
     border-style: dotted;
     border-color: white;
+}
+
+.list-element{
+    list-style-type: none;
 }
