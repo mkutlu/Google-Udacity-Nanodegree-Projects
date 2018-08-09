@@ -1,8 +1,24 @@
+/*Index
+	1.General
+	2.Top Elements
+	3.Center Elements
+	4.Footer Elements
+	5.Responsive Elements
+*/
+
+/* 1.General */
+
 body {
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 150px;
+	padding-right: 150px;
 }
 
+hr {
+	height: 3px;
+	background-color: #7d97ad;
+}
+
+/*  2.TOP OF WEBSITE */
 header {
 	width: auto;
 }
@@ -10,17 +26,16 @@ header {
 header p {
 	text-align: right;
 	font-family: Raleway; 
-	font-size: 30px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 100;
-	color: #7d97ad;
+	color: #2d3c49;
 }
+
 .mk-pp {
 	border-radius: 50%;
-	width: 100px;
-	height: 100px;
-
+	width: 130px;
+	height: 130px;
 }
 
 .mk-info {
@@ -28,15 +43,44 @@ header p {
 	float: right;
 }
 
+#mk-name {
+	font-size: 50px;
+}
+
+#mk-job {
+	font-size: 18px;
+}
+
+
+/* 3.CENTER OF WEBSITE */
+
+#mk-featured {
+	font-size: 30px;
+	color: #7d97ad;
+	font-family: Raleway; 
+	font-style: normal;
+	font-variant: normal;
+}
+
+.mk-content img {
+	max-width: 100%;
+}
+
+/* 4.FOOTER OF WEBSITE */
+
+footer h3 {
+	color: #2d3c49;
+	font-size: 20px;
+}
+
 .mk-square { 
 	width: 30%;
-	border: solid 2px grey;
 	float: left;
 	height: 200px;
+	margin: 10px;
 }
+
 div.mk-square {
-	margin-left: auto;
-    margin-right: auto;
     text-align: center;
     display: table-cell;
     vertical-align: middle
@@ -47,21 +91,22 @@ div.mk-square {
     max-height: 100%;
 }
 
-.mk-square : hover {
-  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-  padding: 3px 0px 3px 3px;
-  margin: 5px 1px 3px 0px;
-  border: 1px solid rgba(81, 203, 238, 1);
-}
+/* 5.Responsive Elements */
 
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .mk-square {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 601px) {
   .mk-square {
-    width: 50%;
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .mk-square {
+    width: 30%;
   }
 }
