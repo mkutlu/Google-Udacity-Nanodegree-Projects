@@ -1,0 +1,67 @@
+body {
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+header {
+	width: auto;
+}
+
+header p {
+	text-align: right;
+	font-family: Raleway; 
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	color: #7d97ad;
+}
+.mk-pp {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+
+}
+
+.mk-info {
+	width: 50%;
+	float: right;
+}
+
+.mk-square { 
+	width: 30%;
+	border: solid 2px grey;
+	float: left;
+	height: 200px;
+}
+div.mk-square {
+	margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle
+}
+
+.mk-square img {
+	max-width: 100%;
+    max-height: 100%;
+}
+
+.mk-square : hover {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+@media screen and (max-width: 500px) {
+  .mk-square {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mk-square {
+    width: 50%;
+  }
+}
