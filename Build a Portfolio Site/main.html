@@ -3,44 +3,56 @@
 <head>
 	<title>Mesut Kutlu - Build a Portfolio Site</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" href="css/bootstrap-reboot.css">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway" />
 </head>
 <body>
-	<header>
-		<img class="mk-pp" src="img/pp.jpg" />
-		<div class="mk-info">
-			<p>
-				<span id="mk-name">MESUT KUTLU</span><br/>
-				<span id="mk-job">Computer Engineer~Fencer</span>
-			</p>
-		</div>	
-	</header>
-	<br />
-	<hr />
-	<br />
-	<div class="mk-content">
-		<img alt="main content" src="img/content.JPG">
+	<div class="container">
+		<header>
+			<div class="row">
+				<div class="mk-pp col-xs-12 col-sm-12 col-lg-6">
+					<img class="mk-pp" src="img/pp.jpg" />
+				</div>
+				<div class="mk-info col-xs-12 col-sm-12 col-lg-6 pull-right">
+					<p>
+						<span id="mk-name">MESUT KUTLU</span><br/>
+						<span id="mk-job">Computer Engineer~Fencer</span>
+					</p>
+				</div>	
+			</div>
+		</header>
+		<br />
+		<hr />
+		<br />
+		<div class="mk-content">
+			<img alt="main content" src="img/content.JPG">
+		</div>
+		<br />
+		<span id="mk-featured">Featured Work</span>
+		<br />
+		<footer>
+			<div class="row">
+				<div class="mk-square col-xs-12 col-sm-6 col-md-4">
+					<img alt="work1" src="img/tn_work1.jpg">
+					<h3>Yemeksepeti.com Crawler</h3>
+					<a href="http://github.com/mkutlu/YSCrawler">http://github.com/mkutlu/YSCrawler</a>	
+				</div>
+				<div class="mk-square col-xs-12 col-sm-6 col-md-4">
+					<img alt="work2" src="img/tn_work2.jpg">
+					<h3>Dental Tourism Turkey</h3>
+					<a href="http://github.com/mkutlu/">http://dentaltourism-turkey.com</a>				
+				</div>
+				<div class="mk-square col-xs-12 col-sm-6 col-md-4">
+					<img alt="work3" src="img/logo.png">	
+					<h3>Other works</h3>
+					<a href="http://github.com/mkutlu/">http://github.com/mkutlu/</a>		
+				</div>
+			</div>
+		</footer>
 	</div>
-	<br />
-	<span id="mk-featured">Featured Work</span>
-	<br />
-	<footer>
-		<div class="mk-square">
-			<img alt="work1" src="img/tn_work1.jpg">
-			<h3>Yemeksepeti.com Crawler</h3>
-			<a href="http://github.com/mkutlu/YSCrawler">http://github.com/mkutlu/YSCrawler</a>	
-		</div>
-		<div class="mk-square">
-			<img alt="work2" src="img/tn_work2.jpg">
-			<h3>Dental Tourism Turkey</h3>
-			<a href="http://github.com/mkutlu/">http://dentaltourism-turkey.com</a>				
-		</div>
-		<div class="mk-square">
-			<img alt="work3" src="img/logo.png">	
-			<h3>Other works</h3>
-			<a href="http://github.com/mkutlu/">http://github.com/mkutlu/</a>		
-		</div>
-	</footer>
+	<script src="js/bootstrap.js"></script>
 </body>
 </html>

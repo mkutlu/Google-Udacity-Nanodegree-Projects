@@ -8,11 +8,6 @@
 
 /* 1.General */
 
-body {
-	padding-left: 150px;
-	padding-right: 150px;
-}
-
 hr {
 	height: 3px;
 	background-color: #7d97ad;
@@ -38,11 +33,6 @@ header p {
 	height: 130px;
 }
 
-.mk-info {
-	width: 50%;
-	float: right;
-}
-
 #mk-name {
 	font-size: 50px;
 }
@@ -55,11 +45,8 @@ header p {
 /* 3.CENTER OF WEBSITE */
 
 #mk-featured {
-	font-size: 30px;
+	font:30px normal Raleway;
 	color: #7d97ad;
-	font-family: Raleway; 
-	font-style: normal;
-	font-variant: normal;
 }
 
 .mk-content img {
@@ -74,10 +61,7 @@ footer h3 {
 }
 
 .mk-square { 
-	width: 30%;
-	float: left;
 	height: 200px;
-	margin: 10px;
 }
 
 div.mk-square {
@@ -91,7 +75,7 @@ div.mk-square {
     max-height: 100%;
 }
 
-/* 5.Responsive Elements */
+/* 5.Responsive Elements Changed with bootstrap
 
 @media only screen and (max-width: 600px) {
   .mk-square {
@@ -109,4 +93,4 @@ div.mk-square {
   .mk-square {
     width: 30%;
   }
-}
+}*/
