@@ -18,6 +18,8 @@ var totalMoves;
 var movesElement;
 var deck;
 var cancel;
+var seconds;
+var defaultStars = document.getElementsByClassName('stars')[0].innerHTML;
 
 function shuffleDeck() { //I create function because i will use it for restart button.
     roundMoveCheck = 0;
@@ -25,6 +27,9 @@ function shuffleDeck() { //I create function because i will use it for restart b
     cardElement;
     totalMatched = 0;
     totalMoves = 0;
+    seconds = 0;
+    clearInterval(cancel);
+    document.getElementsByClassName('stars')[0].innerHTML = defaultStars;
     movesElement = document.getElementsByClassName('moves')[0];
     movesElement.innerText = "0";
     arr = shuffle(arr);
@@ -73,35 +78,30 @@ function shuffle(array) {
 
 //second countup https://stackoverflow.com/questions/37187504/javascript-second-counter
 function countUpTimer() {
-    var seconds = 0;
+    seconds = 0;
     var el = document.getElementById('timer');
     var decFactor = 3;
     function incrementSeconds() {
         seconds += 1;
         el.innerText = seconds;
-        if (seconds * totalMoves > 600 && seconds * totalMoves < 1200){
-        if (decFactor === 3){
-            decFactor=2;
-            let starsElement = document.getElementsByClassName('stars')[0];
-            starsElement.removeChild(starsElement.childNodes[0]);
-        }
-        else{
-            
-        }
-    }
-    else if (seconds * totalMoves > 1200 && seconds * totalMoves < 1800){
-        if (decFactor === 2){
-            decFactor=1;
-            let starsElement = document.getElementsByClassName('stars')[0];
-            starsElement.removeChild(starsElement.childNodes[0]);
-        }
-        else{
-            
-        }
-    }
-    }
-    
+        if (seconds * totalMoves > 600 && seconds * totalMoves < 1200) {
+            if (decFactor === 3) {
+                decFactor = 2;
+                let starsElement = document.getElementsByClassName('stars')[0];
+                starsElement.removeChild(starsElement.childNodes[0]);
+            } else {
 
+            }
+        } else if (seconds * totalMoves > 1200 && seconds * totalMoves < 1800) {
+            if (decFactor === 2) {
+                decFactor = 1;
+                let starsElement = document.getElementsByClassName('stars')[0];
+                starsElement.removeChild(starsElement.childNodes[0]);
+            } else {
+
+            }
+        }
+    }
     cancel = setInterval(incrementSeconds, 1000);
 }
 
