@@ -1,9 +1,9 @@
 /*
  * Create a list that holds all of your cards
  */
-var arr = ["fa-diamond", "fa-paper-plane-o", "fa-anchor", "fa-bolt", "fa-cube", "fa-anchor", "fa-leaf", "fa-bicycle",
-    "fa-diamond", "fa-bomb", "fa-leaf", "fa-bomb", "fa-bolt", "fa-bicycle", "fa-paper-plane-o", "fa-cube"];
-
+var arr = ["fa-diamond", "fa-paper-plane-o", "fa-bolt", "fa-cube",
+    "fa-anchor", "fa-leaf", "fa-bicycle", "fa-bomb"];
+arr = arr.concat(arr);
 /*
  * Display the cards on the page
  *   - shuffle the list of cards using the provided "shuffle" method below
@@ -86,20 +86,16 @@ function countUpTimer() {
         el.innerText = seconds;
         if (seconds * totalMoves > 600 && seconds * totalMoves < 1200) {
             if (decFactor === 3) {
-                console.log(seconds * totalMoves);
                 decFactor = 2;
                 let starsElement = document.getElementsByClassName('stars')[0];
-                console.log(starsElement.innerHTML);
                 starsElement.removeChild(document.getElementsByTagName('li')[0]);
             } else {
 
             }
         } else if (seconds * totalMoves > 1200 && seconds * totalMoves < 1800) {
             if (decFactor === 2) {
-                console.log(seconds * totalMoves);
                 decFactor = 1;
                 let starsElement = document.getElementsByClassName('stars')[0];
-                console.log(starsElement.innerHTML);
                 starsElement.removeChild(document.getElementsByTagName('li')[0]);
             } else {
 
@@ -124,10 +120,8 @@ function revealCard(event) {
         if (roundMoveCheck === 1) { //If it is player's first card try then just reveal card
             openedCard = event.target.querySelector('i').classList.item(1);
             cardElement = event.target;
-            console.log("pressed card type : " + openedCard);
         } else { //check 
             const cardType = event.target.querySelector('i').classList.item(1);
-            console.log("pressed card type : " + cardType);
             if (cardType === (openedCard)) {
                 event.target.classList.add('match');
                 cardElement.classList.add('match');
@@ -155,7 +149,6 @@ function turnBackwithDelay(event) {
     cardElement.classList.remove('show');
     event.target.classList.remove('open');
     event.target.classList.remove('show');
-    console.log(event.target.querySelector('i').classList.item(1) + " and " + cardElement.querySelector('i').classList.item(1) + " classes deleted");
 }
 
 //when restart clicked, shuffleDeck function triggers. 

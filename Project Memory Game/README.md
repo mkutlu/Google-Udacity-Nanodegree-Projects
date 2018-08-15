@@ -14,9 +14,9 @@
 
 ## How-to-play-the-game
 
-	Game begins with your first move. There is 8 different icon behind cards. Flip 2 of them sequentially. If they are identical they will stand flipped. If it is not tyhey will flip again. When you find all of card pair, game will end. Each selection increase your move number. Also there is time countup.
+Game begins with your first move. There is 8 different icon behind cards. Flip 2 of them sequentially. If they are identical they will stand flipped. If it is not tyhey will flip again. When you find all of card pair, game will end. Each selection increase your move number. Also there is time countup.
 Your move number and finish time will effect your result stars.
-	When you stuck or decide to cancel current game you can use restart button, which is placed in upper menu.
+When you stuck or decide to cancel current game you can use restart button, which is placed in upper menu.
 
 ## Screenshots
 
@@ -29,6 +29,6 @@ Your move number and finish time will effect your result stars.
 * [Font Awesome](https://fontawesome.com/)
 * [jQuery](https://jquery.com/)
 
-##Contributing
+## Contributing
 
 Contact : [Mesut Kutlu](https://github.com/mkutlu)
