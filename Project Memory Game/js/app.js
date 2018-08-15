@@ -86,17 +86,21 @@ function countUpTimer() {
         el.innerText = seconds;
         if (seconds * totalMoves > 600 && seconds * totalMoves < 1200) {
             if (decFactor === 3) {
+                console.log(seconds * totalMoves);
                 decFactor = 2;
                 let starsElement = document.getElementsByClassName('stars')[0];
-                starsElement.removeChild(starsElement.childNodes[0]);
+                console.log(starsElement.innerHTML);
+                starsElement.removeChild(document.getElementsByTagName('li')[0]);
             } else {
 
             }
         } else if (seconds * totalMoves > 1200 && seconds * totalMoves < 1800) {
             if (decFactor === 2) {
+                console.log(seconds * totalMoves);
                 decFactor = 1;
                 let starsElement = document.getElementsByClassName('stars')[0];
-                starsElement.removeChild(starsElement.childNodes[0]);
+                console.log(starsElement.innerHTML);
+                starsElement.removeChild(document.getElementsByTagName('li')[0]);
             } else {
 
             }
@@ -139,7 +143,7 @@ function revealCard(event) {
             } else {
                 setTimeout(function () {
                     turnBackwithDelay(event);
-                }, 700);
+                }, 500);
             }
             roundMoveCheck = 0;
         }
