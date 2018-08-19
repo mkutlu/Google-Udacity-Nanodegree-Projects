@@ -3,6 +3,7 @@
 ## Table of Contents
 
 * [Instructions](#introduction)
+* [Installation](#installation)
 * [How to Play The Game](#how-to-play-the-game)
 * [Screenshots](#screenshots)
 * [Contrubuting](#contributing)
@@ -10,6 +11,12 @@
 ## Introduction
 
 	This project completed under Udacity Google FEND, Exploring JS - Objects, Tools and Testing course chapter.
+
+## Installation
+	install git to your computer.
+	run cmd or git bash.
+	execute $git clone https://github.com/mkutlu/Google-Udacity-Nanodegree-Projects/tree/master/Arcade%20Game
+	open index.html file in your browser.
 
 ## How-to-play-the-game
 
@@ -20,6 +27,8 @@ If you succeed to process top zone which symbolized with sea, you will win the g
 ## Screenshots
 
 ![gamescreen](https://github.com/mkutlu/Google-Udacity-Nanodegree-Projects/blob/master/Arcade%20Game/images/gameplay.gif)
+
+[Live Version](https://mkutlu.github.io/Google-Udacity-Nanodegree-Projects/Arcade%20Game/)
 
 ## Contributing
 
