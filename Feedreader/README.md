@@ -1,4 +1,4 @@
-# Arcade Game
+# Feedreader
 
 ## Table of Contents
 
@@ -21,17 +21,17 @@
 
 ## Test-cases
 
-RSS Feeds
-*are defined
-*url defined and not empty
-*name defined and not empty
-The Menu
-*element is hidden by default
-*changes visibility when the menu icon clicked
-Initial Entries
-*should exist at least one entry
-New Feed Selection
-*should loaded by the loadFeed function that changes content
+1. RSS Feeds
+..*are defined
+..*url defined and not empty
+..*name defined and not empty
+2. The Menu
+..*element is hidden by default
+..*changes visibility when the menu icon clicked
+3. Initial Entries
+..*should exist at least one entry
+4. New Feed Selection
+..*should loaded by the loadFeed function that changes content
 
 ## Screenshots
 
