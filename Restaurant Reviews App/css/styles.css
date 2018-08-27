@@ -44,7 +44,8 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   color: #aaa;
   font-size: 8pt;
   letter-spacing: 1px;
-  padding: 25px;
+  padding-bottom: 25px;
+  padding-top: 25px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -65,13 +66,25 @@ nav h1 a {
   letter-spacing: 10px;
   text-transform: uppercase;
 }
+
+
 #breadcrumb {
-    padding: 10px 40px 16px;
+    padding: 10px 40px 16px;    
     list-style: none;
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(50% - 80px);
+}
+
+@media only screen and (max-width: 600px) {
+    header > #breadcrumb {
+        width: calc(100%-80px);
+    }
+}
+@media only screen and (min-width: 600px) {
+    header > #breadcrumb {
+        width: calc(50%-80px);
+    }
 }
 
 /* Display list items side by side */
@@ -197,6 +210,13 @@ nav h1 a {
   top: 80px;
   width: 50%;
 }
+@media only screen and (max-width: 600px) {
+    .inside #map-container {
+        width: 100%;
+        height: 40vh;
+        position: relative;
+    }
+}
 .inside #map {
   background-color: #ccc;
   height: 100%;
@@ -206,6 +226,11 @@ nav h1 a {
   bottom: 0;
   position: absolute;
   width: 50%;
+}
+@media only screen and (max-width: 600px) {
+    .inside #footer {
+        width: 100vw;
+    }
 }
 #restaurant-name {
   color: #f18200;
@@ -242,8 +267,16 @@ nav h1 a {
   padding: 140px 40px 30px;
   width: 50%;
 }
+
 #reviews-container {
   padding: 30px 40px 80px;
+}
+@media only screen and (max-width: 600px) {
+    #restaurant-container, #reviews-container {
+        width: 100%;
+        position: relative;
+        padding: 140px 10px 30px;
+    }
 }
 #reviews-container h2 {
   color: #f58500;
@@ -272,4 +305,23 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+
+.top-style {
+    background-color: #252831; 
+    border-top-left-radius: 25px;
+}
+
+.name-style {
+    text-align: left;
+    color: white;
+    padding: 20px;
+}
+
+.date-style {
+    float: right;
+}
+
+.rating-style {
+    background-color: orange;
 }
