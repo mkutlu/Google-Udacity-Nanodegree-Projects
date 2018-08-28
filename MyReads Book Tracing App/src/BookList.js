@@ -15,9 +15,7 @@ class BookList extends React.Component {
     const read = this.props.books.filter((book) => book.shelf === 'read');
     const wantToRead = this.props.books.filter((book) => book.shelf === 'wantToRead')
     return (
-     <div className="list-books">
-        <span>{currentlyReading.length}</span>
-          
+     <div className="list-books">          
         <div className="list-books-title">
           <h1>MyReads</h1>
         </div>
@@ -27,7 +25,7 @@ class BookList extends React.Component {
               <h2 className="bookshelf-title">Currently Reading</h2>
               <div className="bookshelf-books">
                 <ol className="books-grid">
-                  <Book list={currentlyReading} />
+                  <Book list={currentlyReading} changeCat={this.props.changeCatAppLayer} />
                 </ol>
               </div>
             </div>
@@ -35,7 +33,7 @@ class BookList extends React.Component {
               <h2 className="bookshelf-title">Wants to Reading</h2>
               <div className="bookshelf-books">
                 <ol className="books-grid">
-                  <Book list={wantToRead} />
+                  <Book list={wantToRead} changeCat={this.props.changeCatAppLayer} />
                 </ol>
               </div>
             </div>
@@ -43,7 +41,7 @@ class BookList extends React.Component {
               <h2 className="bookshelf-title">Read</h2>
               <div className="bookshelf-books">
                 <ol className="books-grid">
-                  <Book list={read} />
+                  <Book list={read} changeCat={this.props.changeCatAppLayer} />
                 </ol>
               </div>
             </div>
